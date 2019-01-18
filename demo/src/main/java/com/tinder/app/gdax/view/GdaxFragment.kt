@@ -6,13 +6,13 @@ package com.tinder.app.gdax.view
 
 import android.graphics.Color
 import android.os.Bundle
+import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.Entry
@@ -47,8 +47,6 @@ class GdaxFragment : Fragment(), GdaxTarget {
             .inject(this)
 
         val view = inflater.inflate(R.layout.fragment_gdax, container, false) as View
-
-        chart = view.findViewById(R.id.chart)
 
         return view
     }

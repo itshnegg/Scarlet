@@ -10,13 +10,13 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
 import android.os.Bundle
+import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import com.github.bassaer.chatmessageview.model.ChatUser
 import com.github.bassaer.chatmessageview.model.Message
 import com.github.bassaer.chatmessageview.view.ChatView
@@ -48,7 +48,6 @@ class EchoBotFragment : Fragment(), EchoBotTarget {
 
         val view = inflater.inflate(R.layout.fragment_echo_bot, container, false) as View
 
-        chatView = view.findViewById(R.id.chat_view)
         with(chatView) {
             setOnClickSendButtonListener(View.OnClickListener { sendMessage() })
             setOnClickOptionButtonListener(View.OnClickListener { showImagePicker() })
