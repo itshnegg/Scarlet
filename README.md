@@ -7,7 +7,7 @@ A Retrofit inspired WebSocket client for Kotlin, Java, and Android.
 
 Update
 ---
-We are working on a new version of Scarlet that supports other persistent connection protocols: ServerSentEvent, Socket IO, STOMP, and MQTT. It can be found on the [`0.2.x`](https://github.com/Tinder/Scarlet/tree/0.2.x) branch and is available at `com.github.tinder:scarlet:0.2.1-alpha4`.
+We are working on a new version of Scarlet that supports other persistent connection protocols: ServerSentEvent, Socket IO, STOMP, and MQTT. It can be found on the [`0.2.x`](https://github.com/Tinder/Scarlet/tree/0.2.x) branch.
 
 
 Tutorial
@@ -87,7 +87,7 @@ While we are working on Bintray support, Scarlet is available via [JitPack][jitp
 <dependency>
     <groupId>com.github.tinder.scarlet</groupId>
     <artifactId>scarlet</artifactId>
-    <version>0.1.6</version>
+    <version>0.1.7</version>
 </dependency>
 ```
 
@@ -98,7 +98,7 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 
-implementation 'com.github.tinder.scarlet:scarlet:$0.1.6'
+implementation 'com.github.tinder.scarlet:scarlet:$0.1.7'
 ```
 
 ### Plug-in Roadmap
